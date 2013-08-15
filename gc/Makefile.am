@@ -4,9 +4,7 @@ AM_CPPFLAGS = \
   -I $(abs_top_builddir)
 
 gc_include_HEADERS = \
-  gc.h \
   gc_lock.h \
-  rcu_lock.h \
   rcu_protected.h
 
 gc_includedir = $(includedir)/soa/gc
@@ -17,9 +15,7 @@ libgc_la_LDFLAGS = -avoid-version
 libgc_la_CXXFLAGS = $(URCU_FLAGS)
 
 libgc_la_SOURCES = \
-  gc_lock.cc \
-  rcu_lock.cc \
-  gc.cc
+  gc_lock.cc
 
 libgc_la_LIBADD = \
   $(URCU_LIB) \

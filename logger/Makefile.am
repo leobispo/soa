@@ -138,6 +138,7 @@ TEST_LIB = \
   $(BOOST_REGEX_LIB) \
   $(BOOST_SYSTEM_LIB) \
   $(BOOST_UNIT_TEST_FRAMEWORK_LIB) \
+  $(abs_top_builddir)/soa/gc/libgc.la \
   liblogger.la
 
 #json_filter_test_SOURCES = testing/json_filter_test.cc
